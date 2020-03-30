@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "196542758184",
+    "firebase_url": "https://linkup-2020.firebaseio.com",
+    "project_id": "linkup-2020",
+    "storage_bucket": "linkup-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196542758184:android:3d35ec473707018f69a41d",
+        "android_client_info": {
+          "package_name": "com.thelinkupapp.thelinkupapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196542758184-spivt4pe1ntp17n66nuadl418ffe5tk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD93yPTkI_4Mz-9h-Q6CI6cmobn8psaf4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196542758184-spivt4pe1ntp17n66nuadl418ffe5tk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
