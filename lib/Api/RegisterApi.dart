@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http_parser/http_parser.dart';
 import 'BaseUrl.dart';
 import 'dart:convert';
 import 'package:dio/dio.dart';
@@ -21,13 +22,19 @@ class RegisterApi {
     //File file;
     Response response;
     Dio dio = new Dio();
+    var fileType = fileName.split('.').last;
     //String fileName = file.path.split('/').last;
     FormData formData = FormData.fromMap({
       "name": "$name",
       "email": "$email",
       "password": "$password",
       "gender": gender,
-      "picture": await MultipartFile.fromFile(filePath, filename: fileName),
+      //"picture": await MultipartFile.fromFile(filePath, filename: fileName),
+      "picture": await MultipartFile.fromFile(
+        filePath,
+        filename: fileName,
+        contentType: MediaType('image', '$fileType'),
+      ),
     });
     print("FormData::::");
     print(formData.toString());
